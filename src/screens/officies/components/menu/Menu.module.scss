@@ -1,0 +1,61 @@
+@import 'src/styles/variables.scss';
+
+.menu {
+  max-width: 350px;
+  width: 100%;
+  height: 100%;
+
+
+  .countries {
+    display: flex;
+
+    .button {
+      height: 30px;
+      width: 100%;
+      border: 1px solid $lightGrey-color;
+    }
+
+    .button_active {
+      background-color: $yellow-color;
+    }
+  }
+
+  .city_list {
+    display: flex;
+    flex-direction: column;
+    background-color: $lightGrey-color;
+    min-height: 100vh;
+  }
+}
+
+
+.item {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+
+    .activeTitle {
+      color: $yellow-color;
+    }
+
+  }
+
+  .officeItem {
+    border-bottom: 1px solid $yellow-color;
+
+  }
+
+  .officeName {
+    color: $secondary-color;
+    cursor: pointer;
+  }
+
+  .officeEmail {
+    color: $secondary-color;
+  }
+}
